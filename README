@@ -6,3 +6,15 @@ kernel
 ======
 cd kernel directory
 TARGET_PRODUCT=wiko MTK_ROOT_CUSTOM=../mediatek/custom/ make
+
+github
+
+git add *
+
+git commit -m "First Boot"
+
+git remote add origin https://github.com/Banjo0917/YONIP_MT6589_KERNEL
+
+git push -u https://github.com/Banjo0917/YONIP_MT6589_KERNEL.git
+
+git push -u origin master
