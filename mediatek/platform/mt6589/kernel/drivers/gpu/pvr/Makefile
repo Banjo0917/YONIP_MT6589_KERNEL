@@ -31,13 +31,13 @@ ccflags-y += \
 ccflags-y += \
 	-D__linux__ $(OPTIM) -g
 
-ifeq ($(strip $(TARGET_BUILD_VARIANT)),user)
+#ifeq ($(strip $(TARGET_BUILD_VARIANT)),user)
 ccflags-y += \
     -include $(MTK_PATH_PLATFORM)/drivers/gpu/pvr/include4/config_kernel_user.h
-else
-ccflags-y += \
-    -include $(MTK_PATH_PLATFORM)/drivers/gpu/pvr/include4/config_kernel_eng.h
-endif
+#else
+#ccflags-y += \
+#    -include $(MTK_PATH_PLATFORM)/drivers/gpu/pvr/include4/config_kernel_eng.h
+#endif
 
 ifeq ($(MTK_FORCE_GPU_89T), yes)
 ccflags-y += -DMTK_FORCE_T

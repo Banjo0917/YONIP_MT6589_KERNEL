@@ -5,7 +5,7 @@
 #include <mach/sync_write.h>
 
 
-#define MTK_GPU_DVFS 1
+#define MTK_GPU_DVFS 2
 
 #if MTK_GPU_DVFS
 static struct mt_gpufreq_info freqs_special_vrf18_2[] = {
